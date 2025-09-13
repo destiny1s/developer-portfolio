@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Destiny Shores | Portfolio</title>
   <link rel="stylesheet" href="./css/style.css">
   <meta name="description" content="">
 
@@ -17,14 +17,96 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  
+  <header>
+    <div class="content-wrapper">
+      <h1>Destiny Shores</h1>
+      <h2>Front End Developer</h2>
+      <nav>
+        <ul>
+          <li><a href="#work">projects</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact" id="contact-link">contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="content-wrapper">
+        <div class="about-content-wrapper">
+          <figure>
+            <img src="./img/profile-image.png" alt id="profile-image">
+          </figure>
+          <div class="about-info">
+            <h3>Hi there! I am a front-end developer that specializes in building responsive, accessible, and
+              interactive
+              websites.</h3>
+            <p class="about-text">I like development because it allows me to create web designs of various styles that
+              are functional and offer
+              unique user experiences. I enjoy being able to exercise and grow my skillset with each new project.<br>
+              When I'm not working on a project, I enjoy reading, playing games, and hanging out with my bunnies: Coco &
+              Chanel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="portfolio">
+      <section id="work">
+        <div class="content-wrapper">
+          <h2 class="portfolio-header">Projects</h2>
+          <div class="portfolio-wrapper">
+            <div class="home-portfolio-piece">
+              <figure>
+                <a href="https://kk2yzw.csb.app/" target="_blank">
+                  <img src="img/sticky-notes-app.png" alt="Sticky Note Project">
+                </a>
+              </figure>
+              <h4>Super Sticky Notes</h4>
+              <p class="project-description">
+                An interactive app built using React that uses multiple components to create a sticky note UI
+                with the ability to let users add, edit, delete, and search their sticky notes.
+              </p>
+              <p>
+                <span>Skills:</span> React, JSX, Components
+              </p>
+              <p class="flex-fill">
+                <span>Tools: </span> CodeSandbox, Props, State
+              </p>
+              <a class="project-link" href="https://kk2yzw.csb.app/" target="_blank">
+                live page
+              </a>
+            </div>
+            <!--Start Here and finish inputting projects-->
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+      </section>
+    </article>
+  </main>
+  <footer>
+    <div class="content-wrapper">
+      <div class="footer-contact">
+        <div class="contact"></div>
+        <div class="social"></div>
+      </div>
+    </div>
+  </footer>
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
   <script src="./js/app.js"></script>
 
 </body>
