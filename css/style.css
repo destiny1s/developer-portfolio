@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  
+
 
 }
 
@@ -23,15 +23,27 @@ body {
   font-size: 1.6rem;
   background-color: #5d7466;
   color: #FFFFFF;
-  
 }
 
 img {
-  display: grid;
+  
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+h2 {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+section#work, section#skills, section#about, section#id {
+  border-bottom: 0.5em solid #FFFFFF;
 }
 
 /*****Header Styles*****/
@@ -63,6 +75,7 @@ header h2 {
   font-weight: 200;
   margin-top: 10px;
   margin-bottom: 5px;
+  text-decoration: none;
 }
 
 nav ul {
@@ -78,7 +91,7 @@ nav ul {
 header nav ul li {
   width: 100%;
   font-size: 0.875rem;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -98,6 +111,40 @@ header nav ul li a {
   padding: 0.1em 0.3em;
   background: linear-gradient(90deg, #0097b2, #7ed957);
   border-radius: 20px;
-  
+}
 
+/*****Main Styles*****/
+article h2.portfolio-header {
+  display: flex;
+  justify-content: center;
+}
+
+section#work {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*****Footer Styles*****/
+footer h2 {
+  text-decoration: underline;
+}
+.social-icons li a {
+  list-style: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.contact-email a {
+  text-decoration: none;
+color: #FFFFFF;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
