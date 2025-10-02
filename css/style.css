@@ -26,7 +26,7 @@ body {
 }
 
 img {
-  
+
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -42,7 +42,14 @@ h2 {
   text-decoration: underline;
 }
 
-section#work, section#skills, section#about, section#id {
+h3 {
+  
+}
+
+section#work,
+section#skills,
+section#about,
+section#id {
   border-bottom: 0.5em solid #FFFFFF;
 }
 
@@ -114,6 +121,13 @@ header nav ul li a {
 }
 
 /*****Main Styles*****/
+
+.home-portfolio-piece {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  
+}
+
 article h2.portfolio-header {
   display: flex;
   justify-content: center;
@@ -123,12 +137,54 @@ section#work {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+h4 {
+  padding-bottom: 10px;
+}
 
+p.project-description {
+  padding-bottom: 10px;
+}
+
+div.project-links {
+  /*display: grid;
+  grid-template-columns: auto auto;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.project-link {
+text-decoration: underline;
+  font-style: italic;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+p.flex-fill {
+padding-bottom: 15px;
+}
+
+div.language-wrapper {
+  padding-bottom: 20px;
+}
+
+div.tool-wrapper {
+  padding-bottom: 20px;
+}
+
+div.about-info h3 {
+padding-bottom: 15px;
+}
+
+p.about-text {
+  padding-bottom: 10px;
+}
 
 /*****Footer Styles*****/
 footer h2 {
   text-decoration: underline;
 }
+
 .social-icons li a {
   list-style: none;
   text-decoration: none;
@@ -139,12 +195,13 @@ footer h2 {
   list-style: none;
 }
 
-.contact-email a {
+div.contact-email a {
   text-decoration: none;
-color: #FFFFFF;
+  color: #FFFFFF;
+  padding-bottom: 20px;
 }
 
-footer a {
+a.top-button {
   text-decoration: none;
   color: #FFFFFF;
 }
