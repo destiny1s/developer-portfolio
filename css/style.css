@@ -42,15 +42,16 @@ h2 {
   text-decoration: underline;
 }
 
-h3 {
-  
-}
-
 section#work,
 section#skills,
 section#about,
 section#id {
   border-bottom: 0.5em solid #FFFFFF;
+}
+
+span {
+  font-weight: 800;
+  text-decoration: underline;
 }
 
 /*****Header Styles*****/
@@ -122,23 +123,33 @@ header nav ul li a {
 
 /*****Main Styles*****/
 
+/* Portfolio Styles */ 
+
 .home-portfolio-piece {
-  padding-top: 10px;
-  padding-bottom: 20px;
-  
+  box-shadow: 10px 10px 5px rgba(0 0 0 / 57%), 0 1px 50px rgba(0, 0, 0, 0.19);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  color: #000901;
+  border-radius: 50px;
+  background: #ffffff9c;
 }
 
 article h2.portfolio-header {
   display: flex;
   justify-content: center;
+  margin-bottom: 0;
+  margin-top: revert;
 }
 
-section#work {
+/*section#work {
   background-color: rgba(255, 255, 255, 0.5);
-}
+}*/
 
 h4 {
   padding-bottom: 10px;
+  font-style: italic;
+  font-size: 1.28em;
 }
 
 p.project-description {
@@ -146,34 +157,47 @@ p.project-description {
 }
 
 div.project-links {
-  /*display: grid;
-  grid-template-columns: auto auto;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 a.project-link {
-text-decoration: underline;
+  text-decoration: underline;
   font-style: italic;
   text-transform: capitalize;
-  color: #FFFFFF;
+  color: #000901;
+  white-space: nowrap;
+  padding-right: 15px;
 }
 
 p.flex-fill {
-padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
-div.language-wrapper {
+/***** Skills Styles *****/
+
+div.language-wrapper, div.tool-wrapper {
   padding-bottom: 20px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-div.tool-wrapper {
-  padding-bottom: 20px;
+p.skill, p.tool {
+  background: rgba(0 0 0 / 57%);
+  border-radius: 20px;
+  border: 5px solid #0000003b;
+  margin: 5px 0;
+  border-width: thin;
+  max-width: 230px;
 }
+
+/***** About Styles *****/
 
 div.about-info h3 {
-padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 p.about-text {
@@ -185,14 +209,21 @@ footer h2 {
   text-decoration: underline;
 }
 
-.social-icons li a {
-  list-style: none;
-  text-decoration: none;
-  color: #000000;
+.social-icons ul {
+  padding-left: 0;
 }
 
-.social-icons li {
+.social-icons ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
+  padding-bottom: 10px;
+}
+
+.social-icons li a {
+  text-decoration: none;
+  color: #000901;
 }
 
 div.contact-email a {
@@ -204,4 +235,17 @@ div.contact-email a {
 a.top-button {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+button.scroll-to-top {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  right: 10px;
+  bottom: 10px;
+  position: fixed;
+  cursor: pointer;
+  box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
+  border: none;
 }
