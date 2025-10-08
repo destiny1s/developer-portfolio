@@ -113,7 +113,11 @@ header nav ul li a {
   padding: 0.1em 0.3em;
   background: linear-gradient(90deg, #0097b2, #7ed957);
   border-radius: 20px;
+  overflow: hidden;
 }
+
+/*Shimmer Effect*/
+
 
 /*****Main Styles*****/
 
@@ -214,6 +218,7 @@ h4 {
 footer h2 {
   text-decoration: underline;
 }
+
 .social-icons {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -225,6 +230,7 @@ footer h2 {
   font-size: 2em;
   width: 60%;
 }
+
 .contact-email {
   padding-bottom: 20px;
 }
@@ -234,7 +240,7 @@ footer h2 {
   color: #FFFFFF;
 }
 
-button.scroll-to-top {
+#scroll-to-top {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -245,4 +251,8 @@ button.scroll-to-top {
   cursor: pointer;
   box-shadow: 0 9px 25px 0 rgba(132, 128, 177, 0.28);
   border: none;
+}
+
+.hidden {
+  display: none;
 }
