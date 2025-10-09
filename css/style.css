@@ -204,6 +204,15 @@ h4 {
 
 .about-text {
   padding-bottom: 10px;
+  text-align: justify;
+}
+
+.resume-button {
+  margin-bottom: 15px;
+  text-decoration: none;
+  background: #FFFFFF;
+  border-radius: 20px;
+  color:#000901;
 }
 
 /*****Footer Styles*****/
