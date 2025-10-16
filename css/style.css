@@ -144,7 +144,9 @@ section#work {
   background: #ffffff9c;
 }
 
-
+.home-portfolio-piece figure img {
+  border: 10px solid black;
+}
 
 h4 {
   padding-bottom: 10px;
@@ -208,11 +210,19 @@ h4 {
 }
 
 .resume-button {
+  display: flex;
+  padding: 6px;
   margin-bottom: 15px;
   text-decoration: none;
   background: #FFFFFF;
   border-radius: 20px;
   color:#000901;
+}
+
+.resume-button i {
+  margin-left: 5px;
+  margin-top: 4px;
+  margin-right: 0;
 }
 
 /*****Footer Styles*****/
