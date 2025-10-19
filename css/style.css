@@ -162,10 +162,11 @@ section#work {
   height: 100%;
   background-color: rgba(0, 0, 0, 0);
   transition: background-color 0.5s ease;
+  border-radius: 50%;
 }
 
 .image-container:hover .overlay {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.217);
 }
 
 h4 {
