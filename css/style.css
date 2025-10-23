@@ -108,8 +108,25 @@ header nav ul li a {
   white-space: nowrap;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+.nav-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+}
+
+.nav-underline:hover::after {
+  width: 100%;
 }
 
 #contact-link {
@@ -196,6 +213,11 @@ h4 {
   color: #000901;
   white-space: nowrap;
   padding-right: 15px;
+}
+
+.project-link:hover {
+  text-decoration: none;
+  color: #0097b2;
 }
 
 .flex-fill {
