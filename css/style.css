@@ -53,6 +53,15 @@ header {
   border-bottom: 0.5em solid #FFFFFF;
 }
 
+.header-titles {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
 .content-wrapper {
   display: flex;
   justify-content: center;
@@ -144,14 +153,14 @@ header nav ul li a {
 .shimmer::before {
   content: '';
   position: absolute;
-  top: 0; 
+  top: 0;
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, 
-  rgba(255,255,255, 0) 0%,
-  rgba(255,255,255, 0.3) 50%,
-  rgba(255,255,255, 0) 100%);
+  background: linear-gradient(to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 50%,
+      rgba(255, 255, 255, 0) 100%);
   transform: skewX(-20deg);
   animation: shimmer 2.5s infinite linear;
 }
@@ -166,14 +175,13 @@ header nav ul li a {
   }
 }
 
-.shimmer:hover::before {
-  
-}
-
-
 /*****Main Styles*****/
 
 /* Portfolio Styles */
+
+h2.portfolio-header {
+  margin-bottom: 0;
+}
 
 .portfolio-header {
   display: flex;
@@ -181,13 +189,9 @@ header nav ul li a {
   margin-top: revert;
 }
 
-section#work {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 .home-portfolio-piece {
   box-shadow: 10px 10px 5px rgba(0 0 0 / 57%), 0 1px 50px rgba(0, 0, 0, 0.19);
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 30px;
   padding: 50px;
   color: #0F231E;
@@ -223,6 +227,7 @@ section#work {
 }
 
 h4 {
+  padding-top: 10px;
   padding-bottom: 10px;
   font-style: italic;
   font-size: 1.28em;
@@ -366,6 +371,10 @@ footer h2 {
 }
 
 @media (max-width: 375px) {
+  .header-titles {
+    border-bottom: 0.5em solid #FFFFFF;
+  }
+
   nav ul {
     flex-direction: column;
   }
