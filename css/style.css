@@ -100,7 +100,7 @@ nav ul {
 
 header nav ul li {
   width: 100%;
-  font-size: 0.875rem;
+  font-size: 0.975rem;
 
   display: flex;
   flex-direction: column;
@@ -162,7 +162,10 @@ header nav ul li a {
       rgba(255, 255, 255, 0.3) 50%,
       rgba(255, 255, 255, 0) 100%);
   transform: skewX(-20deg);
-  animation: shimmer 2.5s infinite linear;
+}
+
+.shimmer:hover:before {
+  animation: shimmer 1.5s infinite linear;
 }
 
 @keyframes shimmer {
@@ -298,11 +301,17 @@ h4 {
   padding-left: 8px;
   margin-bottom: 15px;
   text-decoration: none;
-  background: #FFFFFF;
+  background: #0F231E;
   border-radius: 20px;
-  color: #000901;
+  color: #ffffff;
   font-style: italic;
 }
+
+.resume-button:hover {
+  background-image: linear-gradient(to right, rgba(255,255,255), #ffffff);
+  color: #000901;
+}
+
 
 .resume-button i {
   margin-left: 5px;
