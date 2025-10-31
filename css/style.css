@@ -134,14 +134,15 @@ header nav ul li a {
   transition: all 0.3s;
 }
 
-.nav-underline:hover::after {
-  width: 100%;
+.nav-underline:not(#contact-link):hover::after {
+width: 100%;
 }
 
 #contact-link {
   padding: 0.1em 0.3em;
   background: linear-gradient(90deg, #0097b2, #7ed957);
   border-radius: 20px;
+  width: 100%;
 }
 
 /*Shimmer Effect*/
